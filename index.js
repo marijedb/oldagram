@@ -28,3 +28,34 @@ const posts = [
     }
 ]
 
+
+const mainImage = document.getElementById("main-image");
+const heartIcon = document.getElementById("heart-icon");
+const likes = document.getElementById("likes");
+let liked = false;
+let amountLikes =  posts[0].likes;
+
+
+function modifyLikes(){
+    if(liked) {
+        heartIcon.src = "/images/icon-heart.png";
+        amountLikes -= 1;
+        likes.textContent = `${amountLikes} likes`;
+        liked = false;
+    } else {
+        heartIcon.src = "/images/icon-heart-red.png";
+        amountLikes += 1;
+        likes.textContent = `${amountLikes} likes`;
+        liked = true;
+    }
+}
+
+
+mainImage.addEventListener("dblclick", function() {
+    modifyLikes();
+})
+
+
+heartIcon.addEventListener("click", function(){
+    modifyLikes();
+})

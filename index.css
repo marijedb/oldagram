@@ -20,6 +20,8 @@ html, body {
 header {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #C6C6C6;
+    height: 70px;
 }
 
 .user-info {
