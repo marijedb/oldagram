@@ -1,0 +1,100 @@
+html, body {
+    background-color: #EDEDED;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+/* Containers */
+
+.container { 
+    background-color: #fff;
+    margin: 20px auto 0;
+    padding-bottom: 10px;
+    width: 375px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin: 10px 15px;
+}
+
+.user-info-sub {
+    margin-left: 10px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    margin: 15px;
+}
+
+
+
+/* IMAGES & ICONS */
+
+
+.logo {
+    width: 130px;
+    margin-left: 15px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 35px;
+}
+
+.main-profile-picture{
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.icons {
+    width: 23px;
+}
+
+
+
+/* Typography */
+
+
+.user-comment {
+    font-weight: bold;
+}
+
+
+/* Utility Classes */
+
+.p0 {
+    padding: 0;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.mbl {
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+
+
