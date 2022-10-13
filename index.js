@@ -57,3 +57,4 @@ function modifyLikes(){
 mainImage.addEventListener("dblclick", modifyLikes);
 heartIcon.addEventListener("click", modifyLikes);
 heartIconRed.addEventListener("click", modifyLikes);
+
