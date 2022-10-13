@@ -71,6 +71,7 @@ header {
 
 
 
+
 /* Typography */
 
 
@@ -98,5 +99,8 @@ header {
     font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}
 
 

@@ -31,6 +31,7 @@ const posts = [
 
 const mainImage = document.getElementById("main-image");
 const heartIcon = document.getElementById("heart-icon");
+const heartIconRed =document.getElementById("heart-icon-red");
 const likes = document.getElementById("likes");
 let liked = false;
 let amountLikes =  posts[0].likes;
@@ -38,12 +39,14 @@ let amountLikes =  posts[0].likes;
 
 function modifyLikes(){
     if(liked) {
-        heartIcon.src = "/images/icon-heart.png";
+        heartIcon.classList.remove("hidden");
+        heartIconRed.classList.add("hidden")
         amountLikes -= 1;
         likes.textContent = `${amountLikes} likes`;
         liked = false;
     } else {
-        heartIcon.src = "/images/icon-heart-red.png";
+        heartIcon.classList.add("hidden");
+        heartIconRed.classList.remove("hidden");
         amountLikes += 1;
         likes.textContent = `${amountLikes} likes`;
         liked = true;
@@ -51,11 +54,6 @@ function modifyLikes(){
 }
 
 
-mainImage.addEventListener("dblclick", function() {
-    modifyLikes();
-})
-
-
-heartIcon.addEventListener("click", function(){
-    modifyLikes();
-})
+mainImage.addEventListener("dblclick", modifyLikes);
+heartIcon.addEventListener("click", modifyLikes);
+heartIconRed.addEventListener("click", modifyLikes);
